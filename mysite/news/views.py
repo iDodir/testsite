@@ -55,7 +55,6 @@ class CreateNews(CreateView):
     template_name = 'news/add_news.html'
     # success_url = reverse_lazy('home')
 
-
 # def index(request):
 #     news = News.objects.all()
 #     context = {
