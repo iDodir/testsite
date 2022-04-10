@@ -1,13 +1,17 @@
 from django.urls import path
+from django.views.decorators.cache import cache_page
 
 from . import views
 
 urlpatterns = [
     path('register/', views.register, name='register'),
-    path('login/', views.login, name='login'),
+    path('login/', views.user_login, name='login'),
+    path('logout/', views.user_logout, name='logout'),
     path('test/', views.test, name='test'),
+    path('contact/', views.contact, name='contact'),
     # path('', views.index, name='home'),
     path('', views.HomeNews.as_view(), name='home'),
+    # path('', cache_page(60)(views.HomeNews.as_view()), name='home'),
     # path('category/<int:category_id>/', views.get_category, name='category'),
     path('category/<int:category_id>/', views.NewsByCategory.as_view(), name='category'),
     # path('news/<int:news_id>/', views.view_news, name='view_news'),
