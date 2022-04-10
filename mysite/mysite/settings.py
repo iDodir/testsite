@@ -146,7 +146,7 @@ INTERNAL_IPS = [
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'm.v.mokronosov@gmail.com'
-EMAIL_HOST_PASSWORD = '9xq8eVtM'
+EMAIL_HOST_PASSWORD = 'password'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 
