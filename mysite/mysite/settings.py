@@ -35,12 +35,15 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'news.apps.NewsConfig',
     'django_extensions',
     "debug_toolbar",
     'ckeditor',
     'ckeditor_uploader',
     'captcha',
+    'mptt',
+
+    'news.apps.NewsConfig',
+    'testapp.apps.TestappConfig',
 ]
 
 MIDDLEWARE = [
