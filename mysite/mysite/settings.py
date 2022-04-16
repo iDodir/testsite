@@ -231,3 +231,5 @@ CACHES = {
         'LOCATION': BASE_DIR / 'django_cache',
     }
 }
+
+MPTT_ADMIN_LEVEL_INDENT = 20
